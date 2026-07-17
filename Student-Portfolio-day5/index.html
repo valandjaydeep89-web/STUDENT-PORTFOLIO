@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaydip Valand — /portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- line-number gutter (decorative, mirrors an editor's line count) -->
+  <div class="gutter" aria-hidden="true"><div class="gutter-inner" id="gutterInner"></div></div>
+
+  <!-- Editor tab bar (acts as the nav) -->
+  <header class="tabbar">
+    <div class="tabbar-inner">
+      <div class="traffic"><span></span><span></span><span></span></div>
+      <ul class="tabs" id="navLinks">
+        <li><a href="#home" class="tab active-tab" data-dot="js">home<em>.jsx</em></a></li>
+        <li><a href="#about" class="tab" data-dot="md">about<em>.md</em></a></li>
+        <li><a href="#skills" class="tab" data-dot="json">skills<em>.json</em></a></li>
+        <li><a href="#projects" class="tab" data-dot="dir">projects<em>/</em></a></li>
+        <li><a href="#contact" class="tab" data-dot="sh">contact<em>.sh</em></a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="comment">// welcome.init()</span>
+        <h1>Building interfaces,<br><span class="highlight">line by line.</span></h1>
+        <p class="role">BCA Student &middot; Aspiring Frontend Developer</p>
+        <p class="desc">
+          Currently in my 2nd year, 3rd semester of BCA at Excellent Institute of BCA.
+          I build websites to express my creativity, and I'm especially curious about
+          how AI can help design and develop better digital experiences.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact"><button class="btn-primary">Get in touch →</button></a>
+          <a href="#skills"><button class="btn-outline">See my stack</button></a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <div class="traffic"><span></span><span></span><span></span></div>
+            <span class="terminal-title">profile.js</span>
+          </div>
+          <pre class="terminal-body" id="typedCode" aria-label="Animated code introducing Jaydip Valand as a frontend developer"></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <span class="comment block-comment">// 01 — about-me.md</span>
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          I'm a BCA student at <strong>Excellent Institute of BCA</strong>, currently learning the
+          fundamentals of frontend development. I enjoy turning ideas into real websites, and
+          I'm especially interested in combining AI tools with web design to bring my creative
+          ideas to life.
+        </p>
+        <p>
+          My goal is to keep building projects that sharpen my skills and eventually work on
+          real-world products where design and creativity meet clean, functional code.
+        </p>
+      </div>
+      <div class="frontmatter reveal">
+        <div class="fm-row"><span class="fm-key">education:</span><span class="fm-val">"2nd Year, Sem 3 — BCA"</span></div>
+        <div class="fm-row"><span class="fm-key">focus:</span><span class="fm-val">"Frontend Development"</span></div>
+        <div class="fm-row"><span class="fm-key">interest:</span><span class="fm-val">"AI-Powered Web Design"</span></div>
+        <div class="fm-row"><span class="fm-key">status:</span><span class="fm-val fm-bool">available</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <span class="comment block-comment">// 02 — skills.json</span>
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-head">
+          <span class="skill-key">"html"</span><span class="skill-note">structuring semantic pages</span>
+        </div>
+        <div class="bar"><div class="bar-fill" data-width="90"></div></div>
+        <span class="skill-pct">90%</span>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-head">
+          <span class="skill-key">"css"</span><span class="skill-note">responsive, modern interfaces</span>
+        </div>
+        <div class="bar"><div class="bar-fill" data-width="85"></div></div>
+        <span class="skill-pct">85%</span>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-head">
+          <span class="skill-key">"javascript"</span><span class="skill-note">interactivity &amp; logic</span>
+        </div>
+        <div class="bar"><div class="bar-fill" data-width="70"></div></div>
+        <span class="skill-pct">70%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <span class="comment block-comment">// 03 — projects/</span>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+
+      <div class="card reveal">
+        <span class="card-path">projects/animeverse/</span>
+        <h3>Animeverse</h3>
+        <p>
+          A multi-page anime information site covering Naruto Shippuden, Demon Slayer,
+          My Hero Academia, and Blue Lock — each page with its own theme, character
+          cards, and streaming-platform style layout.
+        </p>
+        <div class="card-tags">
+          <span>import HTML</span><span>import CSS</span><span>import JS</span>
+        </div>
+        <a href="#" class="btn">./run --view</a>
+      </div>
+
+      <div class="card reveal">
+        <span class="card-path">projects/luxe-store/</span>
+        <h3>LUXE.STORE</h3>
+        <p>
+          A luxury e-commerce homepage built with a cream/black/gold palette, responsive
+          CSS Grid layout, and interactive product sections.
+        </p>
+        <div class="card-tags">
+          <span>import HTML</span><span>import CSS</span><span>import JS</span>
+        </div>
+        <a href="#" class="btn">./run --view</a>
+      </div>
+
+      <div class="card reveal">
+        <span class="card-path">projects/registration-form/</span>
+        <h3>Registration Form UI</h3>
+        <p>
+          A fully validated registration form with a dark violet &amp; gold glassmorphism
+          theme, built using pure HTML and CSS — no JavaScript.
+        </p>
+        <div class="card-tags">
+          <span>import HTML</span><span>import CSS</span>
+        </div>
+        <a href="#" class="btn">./run --view</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <span class="comment block-comment">// 04 — contact.sh</span>
+    <h2 class="section-title">Contact</h2>
+    <p class="contact-sub">$ let's connect and build something great together.</p>
+
+    <div class="contact-grid">
+      <a href="mailto:valandjaydeep89@gmail.com" class="contact-item">
+        <span class="contact-flag">--email</span>
+        <p>valandjaydeep89@gmail.com</p>
+      </a>
+      <a href="tel:+919016678466" class="contact-item">
+        <span class="contact-flag">--phone</span>
+        <p>+91 90166 78466</p>
+      </a>
+      <div class="contact-item static">
+        <span class="contact-flag">--location</span>
+        <p>Ahmedabad, Gujarat</p>
+      </div>
+    </div>
+
+    <div class="social-row">
+      <a href="#" aria-label="GitHub" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.71 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.44-2.7 5.42-5.27 5.7.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+      </a>
+      <a href="#" aria-label="LinkedIn" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.24 8.25h4.5V23H.24V8.25ZM8.34 8.25h4.31v2.02h.06c.6-1.13 2.06-2.32 4.24-2.32 4.53 0 5.37 2.98 5.37 6.86V23h-4.5v-6.72c0-1.6-.03-3.66-2.23-3.66-2.23 0-2.57 1.74-2.57 3.54V23h-4.5V8.25Z"/></svg>
+      </a>
+      <a href="#" aria-label="Twitter" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 5.14a9.6 9.6 0 0 1-2.73.75 4.77 4.77 0 0 0 2.1-2.63 9.5 9.5 0 0 1-3.01 1.15 4.74 4.74 0 0 0-8.08 4.32A13.44 13.44 0 0 1 1.67 3.9a4.74 4.74 0 0 0 1.47 6.32 4.7 4.7 0 0 1-2.15-.59v.06a4.74 4.74 0 0 0 3.8 4.65 4.75 4.75 0 0 1-2.14.08 4.74 4.74 0 0 0 4.43 3.29A9.51 9.51 0 0 1 0 19.54 13.4 13.4 0 0 0 7.26 21.7c8.71 0 13.47-7.22 13.47-13.48l-.02-.61a9.6 9.6 0 0 0 2.36-2.47Z"/></svg>
+      </a>
+    </div>
+
+    <form class="contact-form" action="mailto:valandjaydeep89@gmail.com" method="post" enctype="text/plain">
+      <label class="prompt-line" for="fld-name"><span class="prompt-sign">&gt;</span><input id="fld-name" type="text" name="name" placeholder="your-name" required></label>
+      <label class="prompt-line" for="fld-email"><span class="prompt-sign">&gt;</span><input id="fld-email" type="email" name="email" placeholder="your-email" required></label>
+      <label class="prompt-line prompt-area" for="fld-msg"><span class="prompt-sign">&gt;</span><textarea id="fld-msg" name="message" rows="4" placeholder="your-message" required></textarea></label>
+      <button type="submit" class="btn-primary full">$ send --message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <p class="comment">// © 2026 Jaydip Valand — compiled with HTML &amp; CSS</p>
+      <div class="socials">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>	
